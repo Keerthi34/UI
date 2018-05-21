@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   onClickSubmit(data) {
     this._cookieService.put('id', data.uname);
         console.log("Set Test Cookie as Test");
-  console.log("cookie "+this.getCookie("id"));
+  //console.log("cookie "+this.getCookie("id"));
   this.router.navigate(['/teacherdashboard']);
       }
   ngOnInit() {

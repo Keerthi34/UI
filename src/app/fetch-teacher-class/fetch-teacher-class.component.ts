@@ -32,6 +32,8 @@ export class FetchTeacherClassComponent implements OnInit {
               )
           }
 
+
+
   ngOnInit() {
       this.activatedRoute.params.subscribe(paramsId => {
           this.id = paramsId.id;
@@ -43,7 +45,7 @@ export class FetchTeacherClassComponent implements OnInit {
 
       console.log("cookie "+this.getCookie("id"));
 
-  this.http.get("http://localhost:3004/class/"+this.id).subscribe(
+  this.http.get("http://10.10.5.54:3004/class/"+this.id).subscribe(
     (res:Response) =>{
     this.Class= res.json();
 

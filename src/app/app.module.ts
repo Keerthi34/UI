@@ -34,7 +34,7 @@ import { TcComponent } from './tc/tc.component';
     TeacherDashboardComponent,
 
     FetchTeacherClassComponent,
-    StudentsComponent
+    StudentsComponent,
 
     TeacherregComponent,
 
@@ -77,7 +77,7 @@ import { TcComponent } from './tc/tc.component';
         {
            path: 'students',component: StudentsComponent
         },
-
+        {
           path:'sudheer',component:TcComponent
         },
         {path:"addteacher",component:TeacherregComponent},
