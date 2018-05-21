@@ -9,7 +9,7 @@ import { NewStudentListComponent } from './new-student-list/new-student-list.com
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { TeacherComponent } from './teacher/teacher.component';
 import { AssignTeacherToClassComponent } from './assign-teacher-to-class/assign-teacher-to-class.component';
-import { AssignStudentToClassComponent } from './assign-student-to-class/assign-student-to-class.component';
+
 import { TeacherDashboardComponent } from './teacher-dashboard/teacher-dashboard.component';
 
 import {FetchTeacherClassComponent} from './fetch-teacher-class/fetch-teacher-class.component';
@@ -20,6 +20,8 @@ import { TeacherregComponent } from './teacherreg/teacherreg.component';
 
 import { EditComponent } from './edit/edit.component';
 import { TcComponent } from './tc/tc.component';
+import { AssignclasstostudentComponent } from './assignclasstostudent/assignclasstostudent.component';
+import { AssignlistComponent } from './assignlist/assignlist.component';
 
 
 @NgModule({
@@ -30,7 +32,6 @@ import { TcComponent } from './tc/tc.component';
     AdminDashboardComponent,
     TeacherComponent,
     AssignTeacherToClassComponent,
-    AssignStudentToClassComponent,
     TeacherDashboardComponent,
 
     FetchTeacherClassComponent,
@@ -39,7 +40,12 @@ import { TcComponent } from './tc/tc.component';
     TeacherregComponent,
 
     EditComponent,
+
+    TcComponent,
+    AssignclasstostudentComponent,
+    AssignlistComponent,
     TcComponent
+
 
   ],
   imports: [
@@ -64,12 +70,20 @@ import { TcComponent } from './tc/tc.component';
         {
            path: 'teachertoclass',component: AssignTeacherToClassComponent
         },
-        {
-           path: 'studenttoclass',component: AssignStudentToClassComponent
-        },
+
         {
            path: 'teacherdashboard',component: TeacherDashboardComponent
         },
+
+        {
+           path: 'getsection',component:  AssignclasstostudentComponent
+
+                 },
+       {
+           path: 'getclass/:class/:section',component:  AssignlistComponent
+
+                   },
+
         {
 
            path: 'fetchteacherclass/:id',component: FetchTeacherClassComponent
