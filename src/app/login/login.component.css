@@ -1,6 +1,11 @@
+<<<<<<< HEAD
+body {
+height: 100px;
+=======
 
 body {
 height: 500px;
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 width:500px;
 font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
@@ -14,6 +19,23 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+.total{
+padding-left:150px;
+
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+
+}
+
+img.avatar {
+    width:
+    90%;
+    border-radius: 50%;
+}
+=======
 button {
     background-color: #4CAF50;
     color: white;
@@ -72,3 +94,4 @@ padding-right:20px;
     background-color: #4CAF50;
 
 }
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3

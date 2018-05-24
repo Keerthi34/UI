@@ -35,7 +35,11 @@ import { AssignlistComponent } from './assignlist/assignlist.component';
     TeacherDashboardComponent,
 
     FetchTeacherClassComponent,
+<<<<<<< HEAD
     StudentsComponent,
+=======
+    StudentsComponent
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 
     TeacherregComponent,
 
@@ -91,11 +95,19 @@ import { AssignlistComponent } from './assignlist/assignlist.component';
         {
            path: 'students',component: StudentsComponent
         },
-        {
+<<<<<<< HEAD
+{
+          path:'sudheer',component:TcComponent
+        },
+        {path:"addteacher",component:TeacherregComponent},
+        {path:"edit/:id",component:EditComponent}
+=======
+
           path:'sudheer',component:TcComponent
         },
         {path:"addteacher",component:TeacherregComponent},
         {path:"edit",component:EditComponent}
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 
 
       ])

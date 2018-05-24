@@ -1,12 +1,4 @@
 body {
-<<<<<<< HEAD
-font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #2db577;}
-
-
-.container{
-padding-left:300px;
-=======
 height: 500px;
 width:500px;
 font-family: Arial, Helvetica, sans-serif;}
@@ -23,7 +15,6 @@ input[type=text], input[type=password] {
 .total{
     background-color:#2db577;
 
->>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 }
 .column {
     float: left;
@@ -44,10 +35,3 @@ input[type=text], input[type=password] {
     display: table;
     clear: both;
 }
-<<<<<<< HEAD
-.page{
-position:absolute;
-  padding-right: 40px;
-}
-=======
->>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3

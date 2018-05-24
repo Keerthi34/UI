@@ -1,3 +1,42 @@
+<<<<<<< HEAD
+
+
+  <form #data="ngForm" (ngSubmit)="onSubmit(data.value)" >
+
+  <label>Class </label>
+
+  <select name="Class"  [(ngModel)]="cl" >
+
+
+      <option *ngFor="let classes of class"   [value]="classes.classes.classname" >
+          {{classes.classes.classname}}
+      </option>
+  </select >
+
+  <label>Section</label>
+<select  name="Section" [(ngModel)]="sec">
+
+
+      <option *ngFor="let sections of section" [selected]="sections.value==sections" [value]="sections">
+          {{sections}}
+      </option></select>
+
+
+
+  <label>Subject</label>
+ <select  name="Subject"  [(ngModel)]="sub">
+
+
+            <option *ngFor="let sections of subjects" [value]="sections">
+                {{sections}}
+            </option>
+            </select>
+
+
+
+
+
+=======
 <form #data="ngForm" (ngSubmit)="onSubmit(data.value)">
  
   <label>TEACHERS </label>
@@ -37,6 +76,7 @@
 
 
  
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 <input type="submit" value="update" >
 
  </form>

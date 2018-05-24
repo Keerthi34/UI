@@ -13,10 +13,19 @@ export class LoginComponent implements OnInit {
 
   constructor(private _cookieService:CookieService,private router: Router) { }
   onClickSubmit(data) {
+<<<<<<< HEAD
+    this._cookieService.put('id', data.UNAME);
+        console.log("Set Test Cookie as Test");
+  console.log("cookie "+this.getCookie("id"));
+  this.router.navigate(['/teacherdashboard']);
+
+  
+=======
     this._cookieService.put('id', data.uname);
         console.log("Set Test Cookie as Test");
-  //console.log("cookie "+this.getCookie("id"));
+  console.log("cookie "+this.getCookie("id"));
   this.router.navigate(['/teacherdashboard']);
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
       }
   ngOnInit() {
 

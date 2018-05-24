@@ -3,12 +3,25 @@
 </div>
 
     <form #f = "ngForm" (ngSubmit) = "onClickSubmit(f.value)" >
+<<<<<<< HEAD
+
+<select (change)="fetchClass($event.target.value)" name="Class">
+    <option >Class</option>
+=======
 <select (change)="fetchClass($event.target.value)">
     <option value=0>Class<option>
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
       <option *ngFor ="let c of S" value="{{c}}" >
         {{c}}
       </option>
    </select>
+<<<<<<< HEAD
+
+
+
+
+=======
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 <!--<button  type="submit" click="Submit.click()" value="Submit">Submit</button>-->
 <table id="customers">
 <thead>

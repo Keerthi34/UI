@@ -11,10 +11,17 @@
         <th>Package</th>
         <th>Address</th>
         <th>Phone_Number</th>
+<<<<<<< HEAD
+
+        </tr>
+  <tr *ngFor="let t of teacher">
+
+=======
         
         </tr>
   <tr *ngFor="let t of teacher">
    
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 <td>{{t.School_id}}</td>
 <td>{{t.Teacher_id}}</td>
   <td>{{t.First_Name}}</td>
@@ -27,9 +34,15 @@
 <td>{{t.Phone_Number}}</td>
   </tr>
   </table>-->
+<<<<<<< HEAD
+
+  <!--<form #data="ngForm" (ngSubmit)="onSubmit(data.value)">
+
+=======
   
   <!--<form #data="ngForm" (ngSubmit)="onSubmit(data.value)">
  
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
     <label>TEACHERS </label>
     <select (change)="fetchclass($event.target.value)"  name="_id" ngModel>
         <option value="0">TEACHERS</option>
@@ -66,7 +79,11 @@
     </select>
 
 
+<<<<<<< HEAD
+
+=======
    
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 <input type="submit" value="update" >
 
    </form>-->
@@ -81,6 +98,18 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body {
+<<<<<<< HEAD
+    padding-left: 150px;
+
+    width:500px;
+font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #2db577;}
+
+
+.total{
+    background-color:#2db577;
+    padding-left:150px;
+=======
 height: 500px;
 width:500px;
 font-family: Arial, Helvetica, sans-serif;}
@@ -96,6 +125,7 @@ input[type=text], input[type=password] {
 }
 .total{
     background-color:#2db577;
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 
 }
 .column {
@@ -124,16 +154,28 @@ input[type=text], input[type=password] {
             border-collapse: collapse;
             width: 100%;
         }
+<<<<<<< HEAD
+
+=======
         
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
         #customers td, #customers th {
             border: 1px solid #ddd;
             padding: 8px;
         }
+<<<<<<< HEAD
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers tr:hover {background-color: #ddd;}
+
+=======
         
         #customers tr:nth-child(even){background-color: #f2f2f2;}
         
         #customers tr:hover {background-color: #ddd;}
         
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
         #customers th {
             padding-top: 12px;
             padding-bottom: 12px;
@@ -141,6 +183,18 @@ input[type=text], input[type=password] {
             background-color:#f29c12;
             color: white;
         }
+<<<<<<< HEAD
+.as{
+
+
+}
+        </style>
+
+</head>
+<body >
+
+
+=======
         
         </style>
         
@@ -150,17 +204,26 @@ input[type=text], input[type=password] {
                 <h2 >Assigning Teacher to class </h2>
                 </div>
                 
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
    <a [routerLink]="['/addteacher']">ADD TEACHER</a>
 
    <table id="customers">
 
        <tr>
     <th>School_Id</th>
+<<<<<<< HEAD
+    <th>Teacher_Id</th>
+       <th>Class</th>
+       <th>Section</th>
+       <th>Subject</th>
+
+=======
     <th>Teacher_Id</th>     
        <th>Class</th>
        <th>Section</th>
        <th>Subject</th>
        
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
        <th>EDIT</th></tr>
 <tr *ngFor="let teachers of teacher" >
 <td>{{teachers.School_Id}}</td>
@@ -170,15 +233,27 @@ input[type=text], input[type=password] {
 <td>{{teachers.Section}}</td>
 <td>{{teachers.Subject}}</td>
 
+<<<<<<< HEAD
+<td><a [routerLink]="['/edit',teachers.Teacher_Id]">EDIT</a></td>
+
+</tr>
+
+=======
 <td><a [routerLink]="['/edit']">EDIT</a></td>
 
 </tr>
            
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 
 
 
 </table>
+<<<<<<< HEAD
+</body>
+</html>
+=======
 
 </body>
 </html>
 
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3

@@ -36,6 +36,17 @@ export class TeacherregComponent implements OnInit {
   teacherid=[];
   fetchclass=function()
   {
+<<<<<<< HEAD
+    this.http.get("http://10.10.5.59:5000/getclass").subscribe (
+      (res:Response) =>{
+        this.class=res.json();
+
+         // var classes=this.class[0].classname;
+
+       // console.log("vsjfbvckjs "+this.teacherslist)
+
+
+=======
     this.http.get("http://10.10.5.4:5000/getclass").subscribe (
       (res:Response) =>{
         this.class=res.json();
@@ -45,6 +56,7 @@ export class TeacherregComponent implements OnInit {
        // console.log("vsjfbvckjs "+this.teacherslist)
   
      
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
       }
   )
   }
@@ -53,12 +65,21 @@ export class TeacherregComponent implements OnInit {
     this.http.get("http://10.10.5.54:3002/fetch").subscribe (
       (res:Response) =>{
         this.teacherid=res.json();
+<<<<<<< HEAD
+
+         // var classes=this.class[0].classname;
+
+       // console.log("vsjfbvckjs "+this.teacherslist)
+
+
+=======
   
          // var classes=this.class[0].classname;
   
        // console.log("vsjfbvckjs "+this.teacherslist)
   
      
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
       }
   )
   }
@@ -67,17 +88,39 @@ export class TeacherregComponent implements OnInit {
     var hash={};
     hash['one']='onellll';
     console.log(hash['one'])
+<<<<<<< HEAD
+    this.http.get("http://10.10.5.59:5000/getclass").subscribe (
+=======
     this.http.get("http://10.10.5.4:5000/getclass").subscribe (
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
       (res:Response) =>{
         this.class=res.json();
          // var classes=this.class[0].classname;
          var data = this.class;
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
          for(var i in data)
          {
               var id = data[i].classes.classid;
             hash[data[i].classes.classname]=data[i].classes.sections
          }
+<<<<<<< HEAD
+
+  this.section=hash[pro]
+
+      }
+    )
+  }
+
+  fetchsubjects=function(pro)
+  {
+    var hash={};
+
+    this.http.get("http://10.10.5.59:5000/getclass").subscribe (
+=======
     
   this.section=hash[pro]
         
@@ -90,16 +133,30 @@ export class TeacherregComponent implements OnInit {
     var hash={};
     
     this.http.get("http://10.10.5.4:5000/getclass").subscribe (
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
       (res:Response) =>{
         this.class=res.json();
          // var classes=this.class[0].classname;
          var data = this.class;
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
          for(var i in data)
          {
               var id = data[i].classes.classid;
             hash[data[i].classes.sections[i]]=data[i].classes.subjects
          }
+<<<<<<< HEAD
+
+  this.subjects=hash[pro]
+
+      }
+    )
+  }
+
+=======
     
   this.subjects=hash[pro]
         
@@ -107,16 +164,25 @@ export class TeacherregComponent implements OnInit {
     )
   }
   
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 
   ngOnInit() {
   //  this.fetchDate();
     this.fetchclass();
   this.fetchstudentid();
+<<<<<<< HEAD
+
+  }
+  onSubmit=function(Teacher_Info) {
+    alert(JSON.stringify(Teacher_Info))
+
+=======
     
   }
   onSubmit=function(Teacher_Info) {
     alert(JSON.stringify(Teacher_Info))
    
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
 
     if(confirm("ARE U SURE FOR ADD?"))
     {var Teacher=JSON.stringify(Teacher_Info)
@@ -130,11 +196,19 @@ alert(url)
 
       this.http.post(url,Teacher_Info).toPromise()
       .then(res => console.log(Teacher_Info,<any[]> res.json()))
+<<<<<<< HEAD
+
+
+      .then(data => { return data; });
+//alert("successfully ADDED....!")
+
+=======
                    
       
       .then(data => { return data; });
 //alert("successfully ADDED....!")
     
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
     }
 }
 

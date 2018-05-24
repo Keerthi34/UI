@@ -22,6 +22,10 @@
     "@angular/router": "^6.0.0",
     "angular2-cookie": "^1.2.6",
     "core-js": "^2.5.4",
+<<<<<<< HEAD
+    "jquery": "^3.3.1",
+=======
+>>>>>>> 98a7afc94dee7425bdb9b049f82a25f6aa0f01c3
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
